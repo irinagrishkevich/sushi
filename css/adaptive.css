@@ -1,0 +1,84 @@
+@media screen and (max-width: 1229px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .header .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 30px;
+
+    }
+
+    .header-logo {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .header .container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-column-gap: 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-logo {
+        justify-self: start;
+    }
+
+    .burger {
+        display: block;
+        justify-self: end;
+        color: white;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .order-sushi .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 128px 105px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .order-sushi-content-image {
+        grid-row: unset;
+        grid-column: unset;
+    }
+
+    .order-sushi {
+        padding: 40px 0 40px 0;
+    }
+
+    .order-sushi-title {
+        order: 1;
+        text-align: center;
+    }
+
+    .order-sushi-content-image {
+        order: 2;
+    }
+
+    .order-sushi-content {
+        order: 3;
+        margin-bottom: 0;
+    }
+
+    .order-sushi-action {
+        order: 4;
+    }
+}
+@media screen and (max-width: 646px) {
+    .order-sushi .container {
+        grid-template-rows: 1fr 1fr 128px 105px;
+    }
+}
