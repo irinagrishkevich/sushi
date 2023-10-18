@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 605px) {
     .header .container {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
@@ -76,9 +76,77 @@
     .order-sushi-action {
         order: 4;
     }
+    .sushi-list{
+        padding:40px 0 40px 0;
+    }
 }
 @media screen and (max-width: 646px) {
     .order-sushi .container {
-        grid-template-rows: 1fr 1fr 128px 105px;
+        grid-template-rows: 150px 1fr 180px 70px;
+    }
+}
+@media screen and (max-width:953px) {
+    .sushi-chef{
+        padding:40px 0 40px 0;
+    }
+    .sushi-chef .container{
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 190px 1fr 180px 125px 70px;
+        grid-row-gap: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+    .sushi-chef-image{
+        grid-column: unset;
+        grid-row: unset;
+        margin-bottom: 30px;
+    }
+    .sushi-chef .container h2{
+        max-width: 570px;
+        margin-bottom: 0;
+        order:1;
+    }
+    .sushi-chef-image{
+        order: 2;
+    }
+    .sushi-chef .container p{
+        max-width: 470px;
+        order: 3;
+    }
+    .sushi-chef-bold-text{
+        order: 4;
+    }
+    .sushi-chef-content-items{
+        order: 5;
+    }
+    .sushi-chef-icon{
+        margin-right:20px ;
+    }
+    .footer .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-img{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 390px){
+    .order-sushi .container{
+    grid-template-rows: 250px 1fr 180px 80px;
+}
+    .order-sushi-content-item{
+        gap: 0;
+    }
+    .order-sushi-text{
+        margin-right: 20px;
+    }
+    .sushi-chef{
+        padding: 20px 0 20px 0;
+    }
+    .sushi-list{
+        padding:20px 0 20px 0;
     }
 }
